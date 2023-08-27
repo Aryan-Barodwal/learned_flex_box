@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after psedo SELECTORS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+       
+
+
+        }
+
+
+        body {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: black;
+            color: whitesmoke;
+
+        }
+
+        .navigation {
+            /* border: 2px solid red; */
+            display: flex;
+            font-size: 14px;
+            cursor: pointer;
+
+        }
+
+        li {
+            list-style: none;
+            padding: 34px 23px;
+        }
+
+        li:hover {
+            color: rgb(35, 175, 47);
+        }
+
+
+
+
+        section {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            border: 2px solid red;
+            height: 162px;
+
+            display: flex;
+            flex-direction: column;
+
+            margin: 54px 21px;
+            /* justify-content: center; */
+            align-items: center;
+            justify-content: center;
+            padding: 83px 75px;
+            border: none;
+
+        }
+
+        section::before {
+            content: "WELCOME TO OUR HOUSE";
+            font-size: 30px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: rgb(4 147 8);
+        }
+
+        p {
+            color: rgb(240, 239, 243);
+            font-size: 10px;
+            text-align: center;
+        }
+
+        header::before {
+            /* background-image: url('https://images.unsplash.com/photo-1462618521524-07d259ab774a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHwxOTA3Mjd8fHx8fHx8MTY5Mjc3MTk2MQ&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600') ; */
+            background-image: url('https://images.unsplash.com/photo-1690551902761-1ce9b882f651?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY5Mjg5NTYzNQ&ixlib=rb-4.0.3&q=80&w=1080');
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.3;
+            background-repeat: no-repeat;
+
+            overflow-y: hidden;
+            overflow-x: hidden;
+
+        }
+
+        .container {
+            /* border: 2px solid red; */
+            /* height: 40px; */
+            width: 1000px;
+            margin: auto;
+            padding: 8px 139px;
+            /* padding: 30px 30px; */
+            /* margin: 40px 40px; */
+            display: flex;
+            justify-content: space-evenly;
+            margin: -36px 0px;
+        }
+
+        .gr {
+            margin: 82px 26px;
+        }
+
+        label {
+            cursor: pointer;
+        }
+
+        input[placeholder] {
+            text-align: center;
+        }
+
+
+        input[type="button"] {
+            cursor: pointer;
+            color: black;
+            background-color: aliceblue;
+            border-radius: 14px;
+            padding: 10px 10px;
+
+
+
+        }
+
+        input[type="button"]:hover {
+
+            color: rgb(250, 248, 248);
+            background-color: rgb(64, 192, 64);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Sevices</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <!-- <h1>This is our heading!</h1> -->
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eius recusandae, unde officiis,
+            voluptate molestias aliquam ullam corporis fuga architecto vero eligendi quibusdam blanditiis ipsum debitis.
+            Optio est, aliquid alias culpa dolore at rerum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
+            non! Maiores sed veritatis est, in ipsam nesciunt ad te
+            mhjiheuigfuin jshfjbjk mgfuyjgaJAS GUYGFBHKIUR H ICUIYIURHIUHKD HIUGHIUHWEIUHKJ TIUEHIOUHKguigreuh
+            rriughiuhui guy2hg3ui hriurhi uewghu mpore sapiente impedit alias nam quibusdam quos commodi tenetur
+            accusamus? Soluta, officia.</p>
+    </section>
+
+
+
+    <!-- <hr> -->
+    <div class="container">
+        <h1>
+            GET A CALL
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BACK.
+        </h1>
+
+        <br>
+        
+
+        <div class="tur">
+
+            <div>
+                <label for="name"> </label>
+                <input type="text" name="myname" id="name" placeholder="Enter your name">
+
+
+            </div><br>
+
+            <div>
+                <label for="role"></label>
+                <input type="number" name="myphone_number" id="role" placeholder="Phone no">
+            </div><br>
+
+            <div>
+                <label for="email"></label>
+                <input type="email" name="myEmail" id="email" placeholder="Email ID">
+            </div>
+            <br>
+
+            <div>
+                <label for="program"></label>
+                <select name="my_program" id="program">
+                    <option value="CSS" selected>select</option>
+                    <option value="CSS">PYTHON</option>
+                    <option value="HTMl">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="Java">Java</option>
+                    <option value="Java">Data Science</option>
+                    <option value="Java">R programming</option>
+                </select>
+                <br>
+                <br>
+
+                <input class="re" type="button" value="Sumbit Now"></input>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>
